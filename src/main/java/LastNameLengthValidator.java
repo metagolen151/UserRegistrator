@@ -9,7 +9,7 @@ public class LastNameLengthValidator implements Validator {
         String lastName = user.getLastName();
         if (lastName.length() < MIN_LENGTH || lastName.length() > MAX_LENGTH) {
             throw new IllegalArgumentException(
-                    "First name length must be between " + MIN_LENGTH + " and " + MAX_LENGTH + " characters."
+                    "Last name length must be between " + MIN_LENGTH + " and " + MAX_LENGTH + " characters."
             );
         }
     }
