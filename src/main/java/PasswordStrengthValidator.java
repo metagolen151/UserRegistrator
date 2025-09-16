@@ -19,7 +19,7 @@ public class PasswordStrengthValidator implements Validator {
         }
 
         if (!password.matches(".*[!@#$%^&*()_+\\-\\[\\]{};':\"\\\\|,.<>/?].*")) {
-            throw new IllegalArgumentException("Password must contai at least one special character.");
+            throw new IllegalArgumentException("Password must contain at least one special character.");
         }
     }
 }
